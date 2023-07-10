@@ -9,6 +9,9 @@
     /* Custom styles specific to the About page */
     body {
       background-color: #f7f7f7;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(./t4.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   
     section {
@@ -24,8 +27,27 @@
   
     p {
       font-size: 18px;
-      color: #666;
+      color: #000000;
     }
+    .py-5{
+      height: 40rem;
+    }
+    @media (min-width: 1200px) {
+  /* Styles for large desktop screens */
+  /* Add your CSS rules here */
+  .py-5{
+      height: 70rem;
+    }
+}
+@media (max-width: 767px) {
+  /* Styles for phones */
+  /* Add your CSS rules here */
+  .py-5{
+      height: 70rem;
+    }
+}
+
+
   </style>
   
 </head>
