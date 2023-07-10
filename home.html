@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frank Muthomi - Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Custom styles specific to the Home page */
+    body {
+      background-color: #f7f7f7;
+
+   
+    }
+    .py-5{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      /* width: max-content; */
+      color: white;
+
+    }
+    /* Styles for mobile devices */
+@media (max-width: 767px) {
+  .py-5 {
+    background-image: url(./portrait.jpg);
+    background-repeat: no-repeat;
+      background-size: contain;
+      max-height: fit-content;
+
+      /* background-position: center; */
+    /* Additional background properties */
+  }
+}
+
+/* Styles for desktop devices */
+@media (min-width: 768px) {
+  .py-5 {
+    background-image: url(./land.webp);
+    background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 20rem;
+
+    /* Additional background properties */
+  }
+}
+
+
+    .content {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideInBottom 3s forwards;
+    }
+
+    @keyframes slideInBottom {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Frank Muthomi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content Section -->
+  <section class="py-5">
+    <div class="container text-center content">
+      <h1>Welcome to my Portfolio</h1>
+      <h3>I'm a 3rd-year ICT student at Nyeri National Polytechnic</h3>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

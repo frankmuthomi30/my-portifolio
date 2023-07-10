@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frank Muthomi - Projects</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Custom styles specific to the Projects page */
+    body {
+      background-color: #f7f7f7;
+    }
+  
+    section {
+      padding: 50px 0;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 18px;
+      color: #666;
+    }
+    .project-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.project-container:hover img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-container:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3,
+.project-overlay p {
+  color: #fff;
+}
+
+.project-overlay h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-overlay p {
+  font-size: 16px;
+}
+.custom-bg-color {
+  background-color: #ff0000; /* Replace with your desired color */
+}
+
+
+
+
+/* Add any additional styling as needed */
+
+  </style>
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Frank Muthomi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+  
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="project-container text-center animated fadeIn" data-toggle="modal" data-target="#project1Modal">
+            <div class="project-inner bg-primary">
+              <img src="./p11.webp" class="img-fluid" alt="Project 1">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <div class="overlay-content text-white p-4"> <!-- Updated classes -->
+                  <h3 class="text-white">Coffee Web based M.I.S</h3>
+                  <p class="text-white">Elevate your coffee shop's operations with our comprehensive Coffee MIS (Management Information System). </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="project-container text-center animated fadeIn" data-toggle="modal" data-target="#project2Modal">
+            <div class="project-inner bg-secondary">
+              <img src="./p2.webp" class="img-fluid" alt="Project 2">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <div class="overlay-content text-white p-4"> <!-- Updated classes -->
+
+                  <h3 class="text-white">To-Do-APP</h3>
+                  <p class="text-white">Streamline your daily tasks with our intuitive todo app. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="project-container text-center animated fadeIn" data-toggle="modal" data-target="#project3Modal">
+            <div class="project-inner bg-info">
+              <img src="./p3.webp" class="img-fluid" alt="Project 3">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <div class="overlay-content text-white p-4"> <!-- Updated classes -->
+
+                  <h3 class="text-white">E-commerce website</h3>
+                  <p class="text-white">Revolutionize your shopping experience with our cutting-edge e-commerce website. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+<!-- Project 4 -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="project-container text-center animated fadeIn" data-toggle="modal" data-target="#project4Modal">
+    <div class="project-inner custom-bg-color">
+      <img src="./p4.webp" class="img-fluid" alt="Project 4">
+      <div class="overlay">
+        <div class="overlay-content">
+          <div class="overlay-content text-white p-4"> <!-- Updated classes -->
+
+          <h3 class="text-white">Weather App</h3>
+          <p class="text-white">Stay informed and prepared with our reliable weather app. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Project 3 Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">Project 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Coffee MIS (Management Information System)</h2>
+        <p>
+          I developed a Coffee MIS (Management Information System) as a school project using vanilla JavaScript. The purpose of the system was to keep track of farmers' coffee produce in the factory and generate receipts for registered farmers.
+        </p>
+        <p>
+          The Coffee MIS provided features for managing farmer information, including their names, contact details, and the quantity of coffee they supplied. The system allowed the factory to maintain a database of registered farmers and their coffee produce.
+        </p>
+        <p>
+          Whenever a farmer brought their coffee produce to the factory, the system enabled the factory staff to enter the details of the transaction, such as the farmer's ID, the quantity of coffee, and the quality parameters. Based on this information, the system generated receipts for the farmers, which served as proof of the coffee delivery and payment.
+        </p>
+        <p>
+          The Coffee MIS facilitated efficient record-keeping and simplified the process of managing coffee transactions between farmers and the factory. It provided an organized approach to track and verify the coffee produce received, ensuring transparency and accurate compensation for the farmers.
+        </p>
+        <p>
+          Developing the Coffee MIS using vanilla JavaScript allowed me to apply my programming skills in a practical project and gain a deeper understanding of data management, user interfaces, and system functionality.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Project 2 Modal -->
+<div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project2ModalLabel">Project 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>To-Do App</h2>
+        <p>
+          I developed a to-do app using vanilla JavaScript, which allowed users to create and manage their daily tasks efficiently.
+        </p>
+        <p>
+          The app provided a simple and intuitive interface for users to add, edit, and mark tasks as completed. Tasks were organized in a list format, displaying their title, due date, and priority level.
+        </p>
+        <p>
+          I implemented features such as task filtering and sorting to help users manage their tasks effectively. Users could filter tasks by their status (completed or pending) or by priority level. Additionally, they could sort tasks based on due date or priority.
+        </p>
+        <p>
+          The app also featured local storage functionality, allowing users to persist their tasks across sessions. This ensured that users could access their tasks even after closing and reopening the app.
+        </p>
+        <p>
+          To enhance the user experience, I implemented dynamic updates using JavaScript. For example, when a task was marked as completed, it would visually change in the list to indicate its status. I also included smooth transitions and animations to provide a more engaging interface.
+        </p>
+        <p>
+          Developing the to-do app using vanilla JavaScript was a great learning experience that improved my understanding of DOM manipulation, event handling, and data management. It also reinforced the importance of creating user-friendly interfaces and efficient task management systems.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Project 3 Modal -->
+<div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project3ModalLabel">Project 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>E-commerce Website</h2>
+    <p>
+      I had the opportunity to work on an e-commerce website using vanilla JavaScript. It was an exciting project that allowed me to showcase my skills in front-end web development and enhance my understanding of e-commerce platforms.
+    </p>
+    <p>
+      The website aimed to provide a seamless shopping experience to customers, offering a wide range of products and intuitive user interfaces. I implemented various features, including product listing, search functionality, shopping cart management, and secure checkout process.
+    </p>
+    <p>
+      One of the highlights of the project was developing the product listing page. I created a dynamic layout that displayed product images, titles, prices, and a brief description. Users could easily browse through the products, filter them based on categories or price range, and add items to their cart with just a click.
+    </p>
+    <p>
+      Additionally, I implemented a search functionality that allowed users to find specific products quickly. The search feature utilized JavaScript to filter the products based on keywords entered by the user, providing instant results and enhancing the overall user experience.
+    </p>
+    <p>
+      Security was a crucial aspect of the project. I ensured that sensitive information, such as customer details and payment information, was handled securely. I implemented encryption algorithms and followed best practices to protect user data and prevent any potential security breaches.
+    </p>
+    <p>
+      Overall, working on the e-commerce website using vanilla JavaScript was a valuable experience that enabled me to apply my skills in a real-world scenario. It reinforced my understanding of front-end development concepts, e-commerce functionality, and the importance of user experience in online shopping platforms.
+    </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Project 4 Modal -->
+<div class="modal fade" id="project4Modal" tabindex="-1" role="dialog" aria-labelledby="project4ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project4ModalLabel">Project 4</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Weather App</h2>
+        <p>
+          I had the opportunity to develop a weather app using plain vanilla JavaScript. It was an exciting project that allowed me to combine my passion for coding with my interest in meteorology.
+        </p>
+        <p>
+          The weather app provided real-time weather updates for various locations. Users could enter a city or use their current location to retrieve weather information. I utilized APIs to fetch weather data, including temperature, humidity, wind speed, and weather conditions.
+        </p>
+        <p>
+          One of the key features of the app was the interactive user interface. I designed a visually appealing layout that displayed weather information in a clear and concise manner. Users could easily navigate through the app and switch between different locations to check the weather at their desired places.
+        </p>
+        <p>
+          I implemented additional functionalities, such as hourly and daily forecasts, to provide users with comprehensive weather information. This allowed them to plan their activities accordingly and stay informed about upcoming weather conditions.
+        </p>
+        <p>
+          To enhance the user experience, I incorporated animations and transitions to create smooth and intuitive interactions. For example, when fetching weather data, I added loading spinners and fade-in effects to provide visual feedback to the user.
+        </p>
+        <p>
+          Overall, developing the weather app using plain vanilla JavaScript was a rewarding experience. It allowed me to deepen my knowledge of JavaScript and API integration while creating a practical and user-friendly application.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Add more modals for additional projects -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  
+        <!-- Add more project containers as needed -->
+  
+      </div>
+    </div>
+  </section>
+  
+        <!-- Add more project containers as needed -->
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
